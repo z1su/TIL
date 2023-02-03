@@ -1,0 +1,25 @@
+
+/* p { 모든 p태그에 적용됨
+    font-size: 36px;
+    color: red;
+    font-weight: bold;
+} */
+
+#title{
+    font-size: 20;
+    color: navajowhite;
+}
+
+#heading {
+    font-size: 20;
+    color: aqua;
+}
+
+.font-size {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.font-color {
+    color: green;
+}

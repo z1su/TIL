@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <!--
+        일단 div 태그로 나누자.
+        1) 유지보수가 편해진다.
+        2) 협업이 쉬워진다.
+        3) 직관적으로 네이밍 하기
+        ex) header , footer, headerSearch, header-search
+    -->
+
+    <!--
+        상속: 하위 태그에 상위 태그의 스타일 속성이 적용되는 것
+        button 태그는 부모로부터 스타일 속성을 상속받지 않는다.
+        width, height는 다 상속됨.
+    -->
+
+    <div class="container" style="font-size: 16px">
+        <div class = "parent">
+            <div class = "child"></div>
+        </div>
+
+        <!--
+            일반적으로 16px = 1em = 1rem
+        -->
+
+        <p class="px">px</p>
+        <p class="em">em</p>
+        <!--
+            부모태그에게 font-size 속성이 있으면,
+            그 속성을 1em으로 계산한다.
+        -->
+        <p class="rem">rem</p>
+        <!--
+            html font size : 1rem
+        -->
+
+    </div>
+
+
+</body>
+</html>

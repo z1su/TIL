@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="border: 4px; border-style: solid;">
+    <!--한 줄씩 복사: alt + shift + 아래방향키 -->
+    
+    <!--p: 브라우저의 폭만큼 공간이 할당되는 문단태그-->
+    <!--display: inline-block : p태그는 문단태그이므로 한 줄 띄는게 디폴트이나, 같은 줄에 쓰고 싶다면 이 스타일 지정-->
+    <p style="display: inline-block;">안녕하세요</p>
+    <p style="display: inline-block;">안녕하세요</p>
+    
+    <!--br : 줄바꿈 태그-->
+    <p> p태그 안에서 <br> 줄바꿈하기</p>
+
+
+   <!-- html entitis -->
+    <p> &lt;&gt; </p>  <!-- &lt;&gt: 꺽쇄를 사용하고 싶을 때-->
+    <p>엔퍼&amp; &amp; &amp;센트</p> 
+    <p>공&nbsp;백</p>
+    
+    <!-- 제목을 나타내는 태그 -->
+    <h1>안녕하세요</h1>
+    <h2>안녕하세요</h2>
+    <h3>안녕하세요</h3>
+    <h4>안녕하세요</h4>
+    <h5>안녕하세요</h5>
+
+    <!--
+        목록 태그
+        ol: 순서 목록
+        ul: 순서가 없는 목록
+        li: 목록의 내용
+    -->
+
+    <!--ol: 순서가 있는 목록-->
+    <ol start ="5">
+        <li>가나다</li>
+        <li>마바사</li>
+        <li>123
+            <ol>
+                <li>목록 태그 안에</li>
+                <li>목록 태그 만들기</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!--ul: 순서가 없는 목록-->
+    <ul>
+        <!--list-style: none; 숫자를 없앰-->
+        <li style="list-style: none;">가나다</li>
+        <!--list-style-type: 목록의 기호를 바꿈-->
+        <li style="list-style-type:   circle;">마바사</li>
+        <li>abc</li>
+        <li>def</li>
+    </ul>
+
+
+    <p><b>글자</b>를 강조하고 싶을 때 쓰는 b태그</p>
+
+    <!--
+        시멘틱 태그와 css태그를 구분해서 쓰는 것이 중요
+        ㄴ시멘틱 태그 : 태그마다 특수한 의미가 있는 태그
+
+        u: 고유명사, 철자가 틀렸을 때
+        s: 문서의 내용이 틀렸을 때 (시멘틱태그)
+        del: 예전 버전에는 있었는데, 최신 버전에는 삭제된 내용 (시멘틱태그)
+        strong : 문서에서 중요한 단어 (시멘틱태그)
+        ㄴ b태그와 동일하게 작동하지만 시멘틱태그로서의 의미를 가진다.
+    -->
+
+    <!--윗첨자-->
+    2<sup>2</sup>
+
+    <!--아랫첨자-->
+    2<sub>2</sub>
+
+    <!--abbr-->
+    <abbr title="호버했을 때 나오는 내용">내가 궁금하면 호버해보도록</abbr>
+
+
+<!--
+    1. 절대경로 : 인터넷, url로 접속 가능한 경로
+    2. 상대경로: (통상적으로) 개발 환경에서 시작되는 경로
+    > . : 현재 파일이 위치한 경로
+    > .. : 이전경로 / 상위경로
+-->
+<img style="width: 500px; height: 500px"src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDQ0NEA8PDg0NDQ0NDQ4NDQ8PERANFhEXFxcSFhUYHSggGBolGxcVITEhJSkrLi4wGB83ODMvNygxLisBCgoKDg0OFxAQFS0fHR0rKy4vKy0rLSstNTArLSsrNy8tKystKzcrLS0rLSsrLi0tLS0tKy0rLS0rNS4rKy0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAEBAAIDAQEAAAAAAAAAAAAAAQIEAwUHBgj/xAA7EAACAQIEAwUEBwgDAQAAAAAAAQIDEQQSITEFQVEGEyJhcYGRobEHFDJCcsHwIzNSYoKi0eGSstIV/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAEFBAIDBv/EACIRAQACAwABBAMBAAAAAAAAAAABAgMEESESM0FRIiMxMv/aAAwDAQACEQMRAD8A87KC2P0jC6AFCICgoAAAAUCAoAgKCnUBQDqWBQE6lgUA6gKAdQoBDqAoC9QAA6EKAIAAAAIIQoCqAUIAFKgQoKAAAAAAAAABQICmvjMXGktdX0/yeb3rSO2l6pSbzyGxYWOp/wDqSbvol02OSPE3a7jePXVHJG9i+euidPI7EGFGtGos0XdfJmZ11tFo7DmmJieSAA9IAAAAAAAAgKyEAAAQFAVAABSkKAABUACgQFAEKAAAAAAyjFt2SuxMxHmViszPIhx1qihFyfJfE6jhPHZYedap3OGrVqkYxhPF0YV40o5ryywqJwzNWV2tFe25ucWjPbK1GDd5S8Kcl0v9r2Hz1eabuko+hibeeMluVnxDV1sE469tHmXc8cVDv4Sp1IVZypQliXh6UKNCOJ1vClGKScUsuqVm81tDgq1I923bVLnudbRhKclCEZTnJpRjFOUpPoktz0bsL9E+P4hWhUxlOpg8HFqU3Wjlq1V/BGD1Xq7b8zkdL4nhFKvrVhSqzoxllqThSnKEeeskrJpandpn6VwfAsPgsLHC0KUadCClaENHru782+p+e+1WFWH4hiqcb5VUzQuknaSTtZdG2vYaWjknzVw7lInlmgimMTI02cAAogKAICkAAAAAAICgggKAoAUqAAAAAAAUCAoAgKANjBUY1J2nPu6cVmnO13bpFc5PkjgnxDuasu5jPNqoqVrwj/M9l679GtizleChslNzunZt2StfocVklZaIz82tlz5PztysfDV19zDrYuUp28/M/DruIU8RXbc5wV3eyu7vze8n5u7O17A9gq3GMZ3TkqWGpJTxNaGrjFuyhG/35a26Wb5WerUZ7z9EHDFhuE0qjVqmLlPEy84t2h/Yov2s59jXx4q+DFsZMtu2d/2Z7HcP4XFLC4anTnazrSWetL1qS19m3kd+cfeGLmcLpYYuWjPzj9IunF8WrW1pv1vCLv8AE/RlSNzy/wClPsXLEL6/h43r04Za1JaurTWqcV/EtdOa80jq1bxW/l8c9ZtXw8mgzlRrUpHOmbVZZNoZAIp6eEBSAAAAIUAQFIAAAUAAVQChELYFAgKQBYAoEKAAAARDGRmYSErDg7tzlGEftTkoR/E3ZfE/TnDKMcPRpYeFlGhSp0YrpGEVFfBH5+7GYNV+KYKD+zGsq0vSmnP5xR71Srq/L2GTvT5iGnqR4mXZxZmuppRredzkeIM92OeUzjnNPR7M151jgnX0LCPNfpL7FQg54/CxtduWJoLZvnUguT6rnv6+cQZ77xPEKUGntz8jxftNgI4bFzjD91USq0umWW69j/I1dTN38ZZ+1i5+UOuQIjI0HAgKAICkAgKQAAAAACoCgAUFAAAIAoAgKAAAAAAAzBozZiwO57EPJj41OUKNWT9rjH5SZ6fT4mk007xe99zzTskmp1pdIQXxf+jvVj1GTT0t05vyMbc9yWtre3D0Cjj4vZpHM8WlvJPofC0+Lx2zWtv1OajxKMnpUk3scUurr6upxB3026nDPHZd36nQT4lGK3u+rdzq8RxFz2dl+K3uEJL6vF4mFSFkeSdrZVo4qKn+7pvLDa3dSu17c1z6iHFHGVrt9bOyOh7dJyhRxKu6ebuKklrlzaxv0tyPtS01mJj4eLV7HHUJA48PLNCLe9rS/EtH8TlN+s9iJhiWjkzCAtgVEAAEBQBAUAYgoCoUAKFBUHlCgALAAAAUCAoKAAIIGigD6TstTSoVptpOVVQV9tIr/wBDG14u8Vyd07c/LyOow2MlGn3S2zOT9X+kZd43uYmzP7bNfXj9cOR1ZdTKGKnHmzguDkl0Q2Prk+vO5n3109d/n0NRMyuIkmGcqje+/wABQxsqd14Z05JxqU6kVKE4PdSi90YM4qh6iUceJwqh44JqlUlJxWryPnC735mubVWs3TjC+ik3b2GsbutPcUMfYjmSUBQfd8UBSACFAEBSAAAAAAUKiFQQKAUAAAAAAAoEKAAAAQvbU2ISNdq+nXQ18Bi/HOjLSpBu380OqMrfx8tF4+Wlp5O1mv07RFZImFSVnYzZh3wyuZXODvCPERWjaV9Ffr0Isuds46kjNnDiZqEJSe0Vcsf15alOrmqThyUYy9rb/wAHMdfwebqOvUas5TjFJ8kl/s7E39T2oY+z7ksQUHQ50AAAAEVAUgAAAQoAVCkKEUApRCgBAFAEBQBAUAAAANDiWElKUK1PSrTav5xN8XPnlxxkrNZfTHeaWi0OXC1s0U9uq6M62jVksbWpycnTdnC+qUnFOyfpf3G2tNVo+fmdfWkvFirySjiaFKopReklFu69kV6mJnwWxf1r6+WuX+O7yo6Xj1WPeYakt3VhN+SvZfn7jZhxCEl4ZaGDwMK7q4htN4eFCe7273Lb+6PuOfj6x5dkpmlxmso0JvysvxPZCGKXXY6qpiPrleFJJqnBuUr/AHrfr4nulezz7ebW5Hfpv8JjLu5SlHLKc5PLa1lovyNwyZifocdPRWK/TEyX9dpt9hCg9vCAACAoAgAIoQpAAFwF4iKQyQQKQyKAACAKAIC2FgICiwEI2VmKi5NRSbcmkkldtvZJElUbEU5PKk3J7JJt+4+s4b2QtFVMTJ5mrrD02r/1z92i959HhKdOjCUaEIUYp20j4nbrLW7vc48m5Wvivl149S1vM+HwVDs9jaivHD1EutTLS/7tGxjeweMr4Z0ouhCo60KrzVbrLGEo/dT11R6Xg8LKrOCbbU8lrWuk+t9Dflh0s9PwuzunGybTV9LnDm2rZI9Mw7MOvGOfVEvFaX0a8RpX/aYSS5pVqn5wNmn2U4hRpYyMqGdToRjHualOpeaqwkllvm2T5HqWKXig7J2XlfmcDaeaLup6xypO97tpXV+cduhy+mHR14ZOnOm8tSFSlO32KsJQkvYzm4RhMkqlT+N2j6bv4/I9gxGEjXw0YVoRrKKipRqRTina3hbd015NWPhuK9nfqylVoupKj9+nOSk6Guye7jd7vXa/U6dOIjLHXPs9nHPHVgiZUbjHQGQAxBRYCApAIQpjIijZLkAeuBSADJFIihFKQpUVAIoAABAAACMyIBgz6vsZgI2dd/vGpKEkot04JatXdk3Z69PVnysj7jgsrYOjbRNRjJ3aUnkd18bHHuWmKePl1asRN+y+woYZRofWIwU1GOZyvFuSS1aclb/irOx1Ua7xE5NJpOVn4tnHSzf3tEa2L7TRhh8LRcpSVSrSoQjhY5XazSnOTb2y30VtjlwMXGDS17yc9efv89TKabucJRUpRhmyvlltZR6G/WopLvOVowhLVOSyrVJ78jruEUXGaWa7fPe3VLqfR4ylHNGMbPu4pSevTReZ85/r3D57FvWKSa1XRW1t+exr4mjeScN9W7W8ndPk9Pgb+JXiTtu9U9tPL9bGvCm27Oy8Wt9tk7N+34nqEloVFNSk5RlfKo576O7ej2tsaypRqSqU3qqtOrTebXeDV9deTX6Rt4mKqwqJOea11o1KTvs+d78/O/kadNZfFDxd275VzlHdJLZ9fU9Q8vMqkMspR/hk4+5hG/2goqGLqpfZk1OL6p8zRRvY7eqsSxb19NpgBQe3hAAAIUjCoYtGQsBxAylExI9BSAHWSKACVKAVFRQAKACoAoIIGABjI+57PyvgXG1slKMo6vWTbXsV/l0KDj3f8w69T/UtijwF05U555RtZuEWrNXWWPrpqzscPuot3elr66818ygy/wCtHnHd4RpTTW0U0lzeh2ebPJp/ak7K6v1tt6AHzl7hoYlNSa6Na+W+pqQ+0+qlq228rUYv43+IBYJdZjLzqRcbqSg3GUbWzWbej5Xive+poSxayvxXnN3ShHLFRTUG0n1akQHp5fI9oYeKlPl+0pq++WLTjf8ApkjqkAbOr7VWTsx+yQtgDpfBAAQCMAKgAIgYSiQFGIAI9P/Z" alt="">
+
+
+
+</body>
+</html>

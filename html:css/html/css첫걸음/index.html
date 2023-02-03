@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- head: body태그를 읽기 이전에 알아야 할 정보, html 파일의 기본적인 정보 -->
+    <!-- style: head에 적어놓아야 랜더링 이후 천천히 스타일이 적용되는 불상사를 방지할 수 있음-->
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+    <!--body: 사용자에게 보여주고 싶은 컨텐츠-->
+    <p>문단을 표현하는 p태그 
+        <!--계층구조: Body > p > span
+        자식태그는 부모태그가 닫히기 이전에 반드시 닫혀야한다.-->
+        <span>
+            <p>
+            다른 태그가 들어갈 수도 있다.
+            </p>
+        </span>
+
+    </p>
+
+    <p style="
+        font-size: 48px;
+        font-weight: 100;
+        color: darkblue;">
+        색깔바꾸기
+    </p>
+
+    <p class= "title">
+        .class를 이용해서 이 태그에만 style을 적용하기
+    </p>
+
+    <p id="heading">
+        #id를 이용해서 이 태그에만 style 적용하기
+    </p>
+
+    <p class="title" id="heading">
+        id > class
+    </p>
+
+    <p style=" color: black"; class="title"; id="heading">
+       inline > id > class > head
+    </p>
+
+    <!--id는 고유값으로 정의하는 것이 원칙-->
+    <!-- 태그에 class 여러개 부여해도 상관 x-->
+    
+    <p class="font-size font-color">
+        class를 여러개 부여하기
+    </p>
+
+    <p id="title">안녕하세요</p>
+    <p class="author">판다코딩입니다.</p>
+
+</body> 
+
+</html>
