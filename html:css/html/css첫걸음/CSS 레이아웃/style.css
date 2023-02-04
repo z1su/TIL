@@ -2,14 +2,14 @@
     width: 200px;
     height: 200px;
     border: 3px;
-    background-color: bisque;
+    background: bisque;
 }
 
 .child{
     /* 부모 클래스가 픽셀로 명시되어 있으면 자식태그는 %로 정의를 많이 해준다. */
     width: 70%;
     height: 70%;
-    background-color: aqua;
+    background: aqua;
 }
 
 .px{
