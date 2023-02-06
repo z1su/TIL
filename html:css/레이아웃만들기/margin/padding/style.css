@@ -1,0 +1,30 @@
+.container{
+    /* width: 200px;
+    height: 100px;
+    border: 1px solid red; */
+    margin-top: 5rem;
+    border: 1px solid black;
+}
+
+.child{
+    margin-top: 5rem;
+    background-color: cornflowerblue;
+}
+
+p {
+    /* p태그에 기본적으로 적용되는 공백 없애기 위함 */
+    width: 100px;
+    /*이렇게 한번에 표현도 가능*/
+    margin: 20px 15px 10px 5px;
+    
+    /*이건 모든 방향에 대해 10px margin을 준다는 뜻*/
+    /* margin: 10px; */
+    padding: 10px;
+    border: 1px solid blue;
+    display: inline-block;
+}
+
+h1{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}

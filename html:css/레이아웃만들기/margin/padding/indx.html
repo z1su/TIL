@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* h1, p는 기본적으로 margin이 들어가있어서, 이걸 없애기 위함*/
+        h1{
+            margin: 0px;
+        }
+        p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!--
+        margin: border의 바깥쪽에 여백을 만듦
+        padding: border의 안쪽에 여백을 만듦
+    -->
+
+    <!--
+        margin 겹침, collapsing
+        - margin이 겹쳤을 때 큰 값을 따라간다.
+        - 마진과 마진 사이에 어떤 요소가 있으면 margin 겹침 현상을 해결할 수 있다.
+    -->
+
+    <div class="child">
+        판다코딩
+    </div>
+
+    <p>판다코딩</p>
+    <span>마진 확인</span>
+    </div>
+</body>
+</html>

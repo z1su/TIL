@@ -1,0 +1,42 @@
+
+.container {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    font-size: 0px; 
+    /* ㄴ inline-block에서 생긴 p태그만큼의 공백을 해결하기 위함 */dbackground: white;
+    font-weight: bold;
+}
+
+p {
+    margin: 0px;
+}
+
+.top{
+    background: red;
+    width: 400px;
+    height: 200px;
+    font-size: 16px;
+}
+
+.left {
+    background: blue;
+    width: 200px;
+    height: 200px;
+    float: left;
+    /* inline-block에서 태그와 태그 사이 부여된 공백을 해결하기 위해 top으로 정렬 */
+}
+
+.right {
+    background: green;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.bottom {
+    clear: both;
+    background: purple;
+    width: 400px;
+    height: 200px;
+}
