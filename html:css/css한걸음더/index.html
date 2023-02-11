@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*1. 태그이름*/
+        p { color: red;}
+        
+        /*2. class*/
+        .test {color:blue;}
+
+        /* 3. id */
+        #test {color:blueviolet;}
+
+        /* 4. 모든것을 선택할때, * ( css 초기화 시 많이 사용 ) */
+        *{color:black;}
+        
+        /*5. 선택자 + " " + 선택자*/
+        div p { color: burlywood;}
+
+        /*6. (앞 선택자의 바로 뒤 선택자에 스타일을 입힐 때) 
+        선택자 + " + " + 선택자 */
+        
+        /*7. (직계자속만 선택할 떄) 선택자 + ">" + 선택자 */
+        .text > .panda {
+            color:black;
+        }
+
+         /*8. (+보다 좀 더 관대, 뒤에 선택자가 바로 나오지 않아도 됨) 
+         선택자 + "~" + 선택자 */
+         .test~ .panda {
+            color:aquamarine;
+         }
+
+
+         /* [ ] : 속성선택자
+         타이틀 속성을 가진 것에만 스타일을 입힘
+         */
+         a[title]{
+            color: red;
+         }
+
+        /* [ ] : 속성선택자
+         타이틀이 구글인 것에만 스타일을 입힘 */
+         a[title=goolge] {
+            color:blueviolet;
+         }
+
+         
+
+    </style>
+</head>
+<body>
+<!--
+    : > 가상클래스
+    :: > 가상요소
+-->
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt saepe facere quisquam quibusdam omnis. Eaque, nostrum. Eos necessitatibus autem ab unde distinctio atque minus quod laboriosam consequatur optio. Earum, perspiciatis.</p>
+<p class="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit alias provident accusantium doloribus, adipisci hic sed esse accusamus ad nemo, quibusdam, harum quis consectetur iste rerum eum eveniet quisquam!</p>
+<p id="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit alias provident accusantium doloribus, adipisci hic sed esse accusamus ad nemo, quibusdam, harum quis consectetur iste rerum eum eveniet quisquam!</p>
+<div class="text">
+    <p class="panda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, culpa facere corporis reiciendis ducimus repudiandae quis iusto corrupti illo asperiores voluptatibus fugit libero exercitationem reprehenderit, ab deleniti voluptate laudantium iure?</p>
+<div>
+        <p class="panda">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, fugit. Aliquid modi labore, numquam iste magni nisi dolorum consequuntur quo, dolorem nemo maiores tenetur, amet aspernatur! Excepturi cupiditate natus saepe.
+        </p>
+    </div>
+</div>
+<p class="panda">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, possimus, officia in obcaecati maxime cum voluptates nostrum commodi magni nesciunt, quas illum ullam fugit error assumenda atque hic eos ut.</p>
+
+<a href="" title="naver">naver</a>
+<a href="" title="google">google</a>
+
+</body>
+</html>
