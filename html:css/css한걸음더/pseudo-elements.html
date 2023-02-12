@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- 가상요소 -->
+    <style>
+        .coding::first-line {
+            color: red;
+        }
+
+        .coding::first-letter {
+            color:blue;
+            font-size: 2rem;
+        }
+
+        /* before, after 유용한 태그 / div 태그 내 이미지 관리할 때 많이 사용 */
+        /* 선택한 선택자의 앞 / 뒤에 요소를 넣어주는 것 , content가 필수요소 */
+        .coding::after {
+            content: "after";
+        }
+        
+        .coding::before{
+            content: "before";
+        }
+
+    </style>
+</head>
+<body>
+    <p class="coding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laboriosam ut sit laudantium iure dolores neque totam! Iure dolor exercitationem eos id quasi deleniti alias maxime aperiam, commodi, praesentium doloremque.</p>
+</body>
+</html>

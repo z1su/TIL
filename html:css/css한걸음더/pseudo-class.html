@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 가상 클래스 ' : ' 
+        
+        1) hover */
+        a:hover{
+            color: red;
+        }
+
+        a:link{
+            color: blue;
+        }
+
+        /* 사용자가 클릭한 링크이면 색상이 바뀜*/
+        a:visited{
+            color: purple;
+        }
+
+        /* not: class가 panda가 아닌 p 태그에만 style을 입히겠다는 뜻*/
+        p:not(.panda) {
+            color: red;
+        }
+
+        /* panda class의 3번째 자식에게만 스타일을 부과한다는 뜻*/
+        .panda p:nth-child(3) {
+            color: gold;
+        }
+
+        /* nth-of-type: nth-child보다 호환성 높음 
+        panda 클래스 안에 > coding 클래스가 여러개 있고 > 그중 첫 번째 coding class에 스타일 입힘
+        */
+        .panda .coding:nth-of-type(1) {
+            color: black;
+        }
+
+        /* nth- ~
+        only : 태그가 하나만 존재할 때 사용  */
+
+    </style>
+</head>
+<body>
+
+    
+    <a href="https://www.naver.com/" title="naver">test</a>
+    <a href="" title="google">google</a>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus velit voluptatibus, aperiam sint nobis vitae nesciunt consequatur rem natus sit aliquam cupiditate neque laudantium, facere quis! Beatae laboriosam rem autem?</p>
+    <p class="panda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quo molestias optio. Quos neque omnis dolor sit! Quasi repudiandae fugiat sit consectetur ad ut dolores eos recusandae libero magni. Ut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus at autem adipisci omnis optio aliquid voluptas doloribus suscipit, illo obcaecati modi similique alias. Hic odit autem nobis? Beatae, ipsa.</p>
+</body>
+</html>
