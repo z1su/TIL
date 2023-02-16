@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../TIL/html:css/HTML장인의 핵심정리"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../docs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML장인의 핵심정리"
+	}
+}
