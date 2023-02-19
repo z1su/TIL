@@ -365,4 +365,17 @@ textarea::-webkit-outer-spin-button {
 }
 .info-main-notice .ico-clock {
   margin-right: 6px;
+}
+
+.recent-order-area {
+  display: flex;
+  margin-top: 16px;
+  padding: 18px 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.recent-title {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=styles.css.map */
