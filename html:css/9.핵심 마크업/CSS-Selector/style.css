@@ -1,0 +1,14 @@
+
+
+div * {
+    color: blue;
+}
+
+h1 {
+    color: green;
+}
+
+#first {
+    color: black;
+    font-weight: bold;
+}

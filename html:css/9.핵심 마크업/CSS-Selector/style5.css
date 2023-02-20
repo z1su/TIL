@@ -1,0 +1,15 @@
+
+.best::before{
+    content: "BEST!";
+    color: red;
+
+}
+
+
+p::first-letter {
+    font-weight: bold;
+}
+
+p::first-line {
+    font-size: 30px;
+}
