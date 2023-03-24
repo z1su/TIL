@@ -9,15 +9,15 @@ const paper = input //중첩 배열로 저장
 let zerocnt = 0;
 let onecnt = 0;
 
-// [[1,1,0,0],[1,0,0,0],[1,0,0,1],[1,1,1,1]] 
+// [[1,1,0,0],[1,0,0,0],[1,0,0,1],[1,1,1,1]]
 
 const cutPaper = (row, col, size) => {
   let zero = 0;
   let one = 0;
-  
+
   for (let i = row; i < row + size; i++) {
     for (let j = col; j < col + size; j++) {
-      if (paper[i][j] === 0) zero++; 
+      if (paper[i][j] === 0) zero++;
       else one++;
     }
   }
@@ -27,7 +27,7 @@ const cutPaper = (row, col, size) => {
   } else if (one === size * size) {
     onecnt++; //모두 1일때
   } else {
-    cutPaper(row, col, size / 2); 
+    cutPaper(row, col, size / 2);
     cutPaper(row + size / 2, col, size / 2);
     cutPaper(row, col + size / 2, size / 2);
     cutPaper(row + size / 2, col + size / 2, size / 2);
