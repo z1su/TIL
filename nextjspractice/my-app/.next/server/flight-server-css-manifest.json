@@ -1,0 +1,18 @@
+{
+  "cssImports": {
+    "/Users/songjisu/Documents/GitHub/TIL/nextjspractice/my-app/src/app/layout.tsx": [
+      "/Users/songjisu/Documents/GitHub/TIL/nextjspractice/my-app/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
+      "/Users/songjisu/Documents/GitHub/TIL/nextjspractice/my-app/src/app/globals.css"
+    ],
+    "/Users/songjisu/Documents/GitHub/TIL/nextjspractice/my-app/src/app/page.tsx": [
+      "/Users/songjisu/Documents/GitHub/TIL/nextjspractice/my-app/src/app/page.module.css"
+    ]
+  },
+  "cssModules": {
+    "/Users/songjisu/Documents/GitHub/TIL/nextjspractice/my-app/src/app/page": [
+      "/Users/songjisu/Documents/GitHub/TIL/nextjspractice/my-app/src/app/page.module.css",
+      "/Users/songjisu/Documents/GitHub/TIL/nextjspractice/my-app/src/app/globals.css",
+      "/Users/songjisu/Documents/GitHub/TIL/nextjspractice/my-app/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ]
+  }
+}
