@@ -10,23 +10,24 @@ function EventDetailPage() {
   const eventId = router.query.eventId;
   const event = getEventById(eventId);
 
-  if (!event) {
-    return <p>No event found!</p>;
-  }
+  // if (!event) {
+  //   return <p>No event found!</p>;
+  // }
 
   return (
-    <Fragment>
-      <EventSummary title={event.title}></EventSummary>
-      <EventLogistics
-        date={event.date}
-        address={event.address}
-        image={event.image}
-        imageAlt={event.title}
-      ></EventLogistics>
-      <EventContent>
-        <p>{event.description}</p>
-      </EventContent>
-    </Fragment>
+    // <Fragment>
+    //   <EventSummary title={event.title}></EventSummary>
+    //   <EventLogistics
+    //     date={event.date}
+    //     address={event.address}
+    //     image={event.image}
+    //     imageAlt={event.title}
+    //   ></EventLogistics>
+    //   <EventContent>
+    //     <p>{event.description}</p>
+    //   </EventContent>
+    // </Fragment>
+    <p>hi</p>
   );
 }
 export default EventDetailPage;
