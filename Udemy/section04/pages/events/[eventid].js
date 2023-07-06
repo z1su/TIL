@@ -7,27 +7,27 @@ import { Fragment } from "react";
 
 function EventDetailPage() {
   const router = useRouter();
-  const eventId = router.query.eventId;
-  const event = getEventById(eventId);
+  const eventid = router.query.eventId;
+  const event = getEventById(eventid);
+  console.log(event);
 
-  // if (!event) {
-  //   return <p>No event found!</p>;
-  // }
+  if (!event) {
+    return <p>No event found!</p>;
+  }
 
   return (
-    // <Fragment>
-    //   <EventSummary title={event.title}></EventSummary>
-    //   <EventLogistics
-    //     date={event.date}
-    //     address={event.address}
-    //     image={event.image}
-    //     imageAlt={event.title}
-    //   ></EventLogistics>
-    //   <EventContent>
-    //     <p>{event.description}</p>
-    //   </EventContent>
-    // </Fragment>
-    <p>hi</p>
+    <Fragment>
+      <EventSummary title={event.title} />
+      <EventLogistics
+        date={event.date}
+        address={event.address}
+        image={event.image}
+        imageAlt={event.title}
+      ></EventLogistics>
+      <EventContent>
+        <p>{event.description}</p>
+      </EventContent>
+    </Fragment>
   );
 }
 export default EventDetailPage;

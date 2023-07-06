@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const DUMMY_EVENTS = [
   {
     id: "e1",
@@ -54,4 +56,18 @@ export function getFilteredEvents(dateFilter) {
 
 export function getEventById(id) {
   return DUMMY_EVENTS.find((event) => event.id === id);
+}
+
+function Parent() {
+  const parentFunction = (x) => {
+    console.log(x);
+  };
+
+  return <Child parentFunction={parentFunction}></Child>;
+}
+
+function Child({ parentFunction }) {
+  const [data, setData] = useState(2);
+  parentFunction(data);
+  return <div>Child</div>;
 }
