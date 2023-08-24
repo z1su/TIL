@@ -3,6 +3,7 @@ target = 3
 
 def solution(numbers, target):
     answer = DFS(numbers, target, 0)
+    print(answer)
     return answer
 
 def DFS(numbers, target, depth):
@@ -17,5 +18,4 @@ def DFS(numbers, target, depth):
         numbers[depth] *= -1
         answer += DFS(numbers, target, depth+1)
         return answer
-DFS(numbers, target, 0)
 solution(numbers, target)
